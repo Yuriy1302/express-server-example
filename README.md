@@ -17,13 +17,13 @@
 - на удаление записи
 
 ### Необходимы переменные окружения
-PORT=...<br>
-DB_USER=...<br>
-DB_HOST=...<br>
-DB_NAME=...<br>
-DB_PASSWORD=...<br>
-DB_PORT=...<br>
-JWT_SECRET=secret
+PORT=5000<br>
+DB_USER=your_usern_ame<br>
+DB_HOST=localhost<br>
+DB_NAME=your_data_base<br>
+DB_PASSWORD=your_password<br>
+DB_PORT=5432<br>
+JWT_SECRET=your_secret_word<br>
 
 <hr>
 <b>P.S.</b>: Не является готовым сервером. Требует доработки.
