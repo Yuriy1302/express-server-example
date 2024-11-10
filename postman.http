@@ -1,0 +1,52 @@
+###
+# Register a new user
+POST http://localhost:9000/api/auth/register HTTP/1.1
+Content-type: application/json
+
+{
+    "email": "test4@list.ru",
+    "password": "1234567890"
+}
+
+###
+# Login user
+POST http://localhost:9000/api/auth/login HTTP/1.1
+Content-type: application/json
+
+{
+    "email": "test4@list.ru",
+    "password": "1234567890"
+}
+
+###
+# Get all todos by userId
+GET http://localhost:9000/api/todos HTTP/1.1
+Authorization: Bearer <...token...>
+
+###
+# Create a todo
+POST http://localhost:9000/api/todos HTTP/1.1
+Authorization: Bearer <...token...>
+Content-Type: application/json
+
+{
+    "title": "Task 6"
+}
+
+###
+# Update a todo
+PUT http://localhost:9000/api/todos/9 HTTP/1.1
+Authorization: Bearer <...token...>
+Content-Type: application/json
+
+{
+    "id": 9,
+    "title": "Task number 333",
+    "completed": true,
+    "userId": 13
+}
+
+###
+# Delete a todo
+DELETE http://localhost:9000/api/todos/8 HTTP/1.1
+Authorization: Bearer <...token...>
